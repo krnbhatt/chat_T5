@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'messaging-app';
+  selectedChat: any;
+
+  selectChat(chat: any) {
+    this.selectedChat = chat;
+  }
 }

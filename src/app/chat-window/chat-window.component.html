@@ -1,0 +1,15 @@
+<div class="chat-window">
+  <div class="chat-header">
+    {{ selectedChat?.name }}
+  </div>
+  <div class="chat-messages">
+    <div *ngFor="let message of messages">{{ message }}</div>
+  </div>
+  <div class="chat-reply">
+    <div class="chat2" *ngFor="let message1 of messages2">{{ message1 }}</div>
+  </div>
+  <div class="input-group">
+    <input [(ngModel)]="value" type="text" class="form-control" placeholder="Enter Your Message Here.." />
+    <button class="btn btn-primary" (click)="blankText()" style="margin-left: 10px; border-radius: 5px;" >Send Message</button>
+  </div>
+</div>

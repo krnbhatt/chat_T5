@@ -1,0 +1,60 @@
+/* chat-window.component.css */
+
+.chat-window,
+.chat2 {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.chat-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chat-messages,
+.chat2 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.chat-messages div,
+.chat2 {
+  padding: 5px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style messages sent by the user differently */
+.chat-messages .user-message,
+.chat2 {
+  align-self: flex-end;
+  background-color: #4caf50;
+}
+
+/* Style messages received from others */
+.chat-messages .received-message,
+.chat2 {
+  align-self: flex-start;
+  background-color: #ddd;
+  color: #333;
+}
+
+.chat-reply {
+  margin-left: 300px;
+}
+
+.input-group{
+  width: 550px;
+}
+.input-group input{
+  color: red;
+  border-radius: 5px;
+}

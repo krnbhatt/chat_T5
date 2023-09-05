@@ -1,0 +1,9 @@
+/* app.component.css */
+
+.app-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Additional styling for the overall app layout can be added here */
+  
